@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+.header-about{
+    position: fixed;
+    width: 100vw;
+}
+
+
+.a-header-about{
+    display: block;
+    padding-right: 250px;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+.div-about{
+    /*border: 1px solid white;*/
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 19px;
+    line-height: 35px;
+    color: white;
+}
+
+h3{
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: white;
+}
