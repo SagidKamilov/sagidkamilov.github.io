@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+#general{
+    /*border: 1px solid white;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-photo{
+    /*border: 1px solid white;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.img-div-profile-photo{
+    background-color: white;
+    border-radius: 100%;
+}
+
+.ul-nav-menu {
+    list-style: none;
+}
+
+.ul-nav-menu > li {
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 85px;
+    text-decoration: none;
+    color: white;
+    padding-left: 160px;
+    line-height: 120px;
+}
+
+.ul-nav-menu a .up, .ul-nav-menu a .down {
+    color: white;
+    display: inline-block;
+}
+
+.ul-nav-menu a .up {
+    display: none;
+    color: aquamarine;
+}
+
+.ul-nav-menu a:hover .up {
+    display: inline-block;
+}
+
+.ul-nav-menu a:hover .down {
+    display: none;
+}
+
+.ul-nav-menu a .color-red{
+    color: red;
+}
