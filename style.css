@@ -10,7 +10,6 @@ body{
 }
 
 #nav-menu{
-    /*border: 1px solid white;*/
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -18,7 +17,6 @@ body{
 }
 
 #profile-photo{
-    /*border: 1px solid white;*/
     display: flex;
     justify-content: left;
     align-items: center;
@@ -32,11 +30,7 @@ body{
 
 
 .nav-menu > a {
-    /*border: 1px solid white;*/
     display: flex;
-    /*margin: auto;*/
-    /*align-items: center;*/
-    /*flex-flow: column wrap;*/
     font-family: "Arial", serif;
     font-weight: bold;
     font-size: 85px;
