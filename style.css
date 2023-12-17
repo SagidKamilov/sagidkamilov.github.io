@@ -9,9 +9,10 @@ body{
     background-color: black;
 }
 
-#general{
+#nav-menu{
     /*border: 1px solid white;*/
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
@@ -26,40 +27,47 @@ body{
 .img-div-profile-photo{
     background-color: white;
     border-radius: 100%;
+    border: 5px solid white;
 }
 
-.ul-nav-menu {
-    list-style: none;
-}
 
-.ul-nav-menu > li {
+.nav-menu > a {
+    /*border: 1px solid white;*/
+    display: flex;
+    /*margin: auto;*/
+    /*align-items: center;*/
+    /*flex-flow: column wrap;*/
     font-family: "Arial", serif;
     font-weight: bold;
     font-size: 85px;
     text-decoration: none;
-    color: white;
-    padding-left: 160px;
     line-height: 120px;
+    color: white;
+    transition: 0.4s;
 }
 
-.ul-nav-menu a .up, .ul-nav-menu a .down {
+.nav-menu a .up, .nav-menu a .down {
     color: white;
     display: inline-block;
 }
 
-.ul-nav-menu a .up {
+.nav-menu a .up {
     display: none;
     color: aquamarine;
 }
 
-.ul-nav-menu a:hover .up {
+.nav-menu a:hover .up {
     display: inline-block;
 }
 
-.ul-nav-menu a:hover .down {
+.nav-menu a:hover .down {
     display: none;
 }
 
-.ul-nav-menu a .color-red{
+.nav-menu a .color-red{
     color: red;
+}
+
+.nav-menu > :hover{
+    padding-left: 20px;
 }
