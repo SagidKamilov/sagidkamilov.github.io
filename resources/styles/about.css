@@ -2,43 +2,73 @@ body{
     background-color: black;
 }
 
+/* Для нав меню */
+
 .header-about{
+    display: flex;
+    align-items: center;
+    justify-content: right;
     position: fixed;
+    height: 10vh;
     width: 100vw;
 }
 
 
-.a-header-about{
-    display: block;
+.header-about__a{
     padding-right: 250px;
-    float: right;
     text-decoration: none;
-    text-align: center;
     font-size: 17px;
     color: white;
 }
 
-.div-about{
-    /*border: 1px solid white;*/
+.main-about{
     display: flex;
-    width: 750px;
     justify-content: center;
+    align-items: center;
     flex-flow: column wrap;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-p{
+/* Для главного текста */
+
+.main-about__big{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 100vh;
+}
+
+.big__h1{
+    font-family: "Arial", sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+/* Для общего текста */
+
+.main-about__general{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    border: 1px solid white;
+    width: 50vw;
+    height: 100vh;
+}
+
+/* Заголовок общего текста */
+
+.about-me__begin-text h3{
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+/* Тело общего текста */
+
+.about-me__general-text p{
     font-family: "Arial", sans-serif;
     font-weight: lighter;
     font-size: 19px;
     line-height: 35px;
-    color: white;
-}
-
-h3{
-    font-family: "Arial", sans-serif;
-    font-size: 40px;
     color: white;
 }
