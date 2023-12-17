@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+}
+
+/* Для нав меню */
+
+.header-project{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+}
+
+
+.header-project__a{
+    padding-right: 250px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+/* Общий для текста и заголовка */
+
+.main-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+/* Для главного текста */
+
+.main-project__big{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.big__h1{
+    font-family: "Arial", sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+/* Для общего текста */
+
+.main-project__general{
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    /*flex-flow: column wrap;*/
+    width: 50vw;
+    height: 100vh;
+}
+
+/* Заголовок общего текста */
+
+.project__begin-text h3{
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/* Заголовки общего текста */
+
+.heading__first_project{
+    padding-top: 30px;
+    font-family: "Arial", sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+/* Тело общего текста */
+
+.project__general-text p{
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 35px;
+    color: white;
+}
+
+.description-project{
+    display: none;
+}
+
+.project__general-text ul{
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    /*font-size: 19px;*/
+    line-height: 35px;
+    color: white;
+}
+
+.specific-text__span__red{
+    color: red;
+}
+
+.interesting-text__span_green{
+    text-decoration: none;
+    color: lawngreen;
+}

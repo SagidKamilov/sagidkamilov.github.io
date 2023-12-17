@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/projects.css">
+    <title>Проекты</title>
+</head>
+<body>
+    <header class="header-project">
+        <a href="../index.html" class="header-project__a">Н а з а д</a>
+    </header>
+    <div class="main-project">
+        <div class="main-project__big">
+            <h1 class="big__h1">Я все еще не понимаю... <br>Это значит - учусь.</h1>
+        </div>
+        <div class="main-project__general">
+            <div class="project__begin-text">
+                <h3 class="begin-text__h3">О проектах</h3>
+            </div>
+            <div class="project__general-text">
+                <p class="general-text__intro_p">
+                    Я начал разрабатывать реальные системы с момента, как меня пригласили
+                    в основную <span class="interesting-text__span_green" title="Команда занимается разработкой ПО для колледжа. Этот софт позволяет составлять расписания, управлять заменами, проводить рассылку и т.п. У них есть опыт.">команду</span> колледжа.
+                    Там и начался мой путь <span class="specific-text__span__red">развития</span>.
+                </p>
+                <h3 class="heading__first_project">Август 2022 - Октябрь 2022</h3>
+                <p class="general-text__first_project">
+                    У нас был общий сервер, к которому подключались приложения через API. Был ВК-бот и Android-приложение.
+                    Но из-за санкций мы не смогли распространить IOS-приложение. Меня попросили сделать ТГ-бота.
+                    <br><a href="javascript:void(0)" onclick="showHide('first_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <p class="general-text__first_project description-project" id="first_project">
+                    Телеграм бот работает с backend через API. В его функционал входят следующие возможности:
+                    зарегистрироваться в нашем сервисе отправлять расписание занятий для студентов, для преподавателей,
+                    подписаться на события для группы/групп, получать корректировки по расписанию. Для удобства пользования
+                    были добавлены динамические клавиатуры.
+                </p>
+                <a href="https://github.com/SagidKamilov/TurtleTG_Bot" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/projects.js"></script>
+</body>
+</html>
