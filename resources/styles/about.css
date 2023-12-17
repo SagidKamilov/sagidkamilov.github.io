@@ -34,7 +34,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
     height: 100vh;
 }
 
@@ -50,7 +49,6 @@ body{
     display: flex;
     align-items: flex-start;
     flex-flow: column wrap;
-    border: 1px solid white;
     width: 50vw;
     height: 100vh;
 }
