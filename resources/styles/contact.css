@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+}
+
+/* Для нав меню */
+
+.header-contact{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+}
+
+
+.header-contact__a{
+    padding-right: 250px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+/* Общий контейнер для текста и заголовка */
+
+.main-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+/* Для заголовка */
+
+.main-contact__big{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.big-text__h1{
+    font-family: "Arial", sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+/* Для текста */
+
+.main-contact__general{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    width: 50vw;
+    height: 100vh;
+}
+
+/* Для заголовка в тексте */
+
+.contact-general__begin h3{
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+/* Для основного текста */
+
+.contact-general__text p{
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 19px;
+    line-height: 35px;
+    color: white;
+}
+
+.contact-general__links{
+    margin-top: 50px;
+}
+
+.contact-general__links a{
+    text-decoration: none;
+}
+
+/* Если вставлять иконки, тогда раскомментируй код ниже, а под ним закомментируй */
+
+/*.contact-general__links{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 100%;*/
+/*}*/
+
+/* Для ссылок в виде текста */
+
+.contact-general__links h3{
+    transition: 0.5s;
+    color: red;
+}
+
+.contact-general__links h3:hover{
+    padding-left: 20px;
+}
