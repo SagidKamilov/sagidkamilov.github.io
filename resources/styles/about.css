@@ -21,6 +21,8 @@ body{
     color: white;
 }
 
+/* Общий для текста и заголовка */
+
 .main-about{
     display: flex;
     justify-content: center;
