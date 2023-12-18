@@ -1,45 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/projects.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="shortcut icon" href="icons/s.png" />
     <title>Проекты</title>
 </head>
 <body>
+    <div id="notification" class="notification">
+        <h1 class="notification__big-text__h1">Нажмите на "Описание", чтобы узнать подробнее о проекте.</h1>
+        <p class="notification__small-text__p"># Нажми на меня</p>
+    </div>
+
     <header class="header-project">
         <a href="../index.html" class="header-project__a">Н а з а д</a>
     </header>
+
     <div class="main-project">
         <div class="main-project__big">
             <h1 class="big__h1">Я все еще не понимаю... <br>Это значит - учусь.</h1>
         </div>
         <div class="main-project__general">
+
             <div class="project__begin-text">
                 <h3 class="begin-text__h3">О проектах</h3>
             </div>
+
             <div class="project__general-text">
-                <p class="general-text__intro_p">
-                    Я начал разрабатывать реальные системы с момента, как меня пригласили
-                    в основную <span class="interesting-text__span_green" title="Команда занимается разработкой ПО для колледжа. Этот софт позволяет составлять расписания, управлять заменами, проводить рассылку и т.п. У них есть опыт.">команду</span> колледжа.
-                    Там и начался мой путь <span class="specific-text__span__red">развития</span>.
+                <h3 class="heading__first_project">Декабрь 2023 - декабрь 2023</h3>
+                <p class="general-text__first_project">
+                    Разработка маркетплейса. Простая торговая площадка с профилем пользователя, админ-панелью и т.п.<br>
+                    На площадке можно выкладывать товар от имени пользователя, следить за другими товарами, отправлять обращения к авторам
+                    выложенных товаров, а также отвечать на обращения.
+                    <br><a href="javascript:void(0)" onclick="showHide('ninth_project')" class="interesting-text__span_green">Описание</a>
                 </p>
-                <h3 class="heading__first_project">Август 2022 - Октябрь 2022</h3>
+                <div class="general-text__first_project__div description-project" id="ninth_project">
+                    <p class="general-text__first_project__p">
+                        Функционал сервиса:
+                    </p>
+                    <ul>
+                        <li>
+                            Регистрация/авторизация;
+                        </li>
+                        <li>
+                            CRUD-операции над профилем;
+                        </li>
+                        <li>
+                            CRUD-операции над товаром;
+                        </li>
+                        <li>
+                            Админ-панель;
+                        </li>
+                        <li>
+                            Поиск товара;
+                        </li>
+                        <li>
+                            Площадка маркетплейса;
+                        </li>
+                    </ul>
+                    <p class="general-text__first_project__p">
+                        В ходе разработки были использованы: Docker, Python (Django, и указанные зависимости проекта) - как технологии для разработки и развертывания.<br>
+                        Как хранилище данных: PostgreSQL - для всех данных.
+                    </p>
+                </div>
+                <a href="https://github.com/SagidKamilov/SimpleMarketplace" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
+            </div>
+
+            <div class="project__general-text">
+                <h3 class="heading__first_project">Ноябрь (конец) 2023 - декабрь (начало) 2023</h3>
+                <p class="general-text__first_project">
+                    Разработка backend-сервиса. Бэкенд-сервис с организованной логикой task-менеджмента.<br>
+                    Сервис позволяет интегрироваться через API. Предоставляется основной пакет необходимых услуг.
+                    <br><a href="javascript:void(0)" onclick="showHide('eighth_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <div class="general-text__first_project__div description-project" id="eighth_project">
+                    <p class="general-text__first_project__p">
+                        Функционал сервиса:
+                    </p>
+                    <ul>
+                        <li>
+                            CRUD-операции над пользователями;
+                        </li>
+                        <li>
+                            Сохранение истории изменений задач;
+                        </li>
+                        <li>
+                            CRUD-операции над задачами;
+                        </li>
+                    </ul>
+                    <p class="general-text__first_project__p">
+                        В ходе разработки были использованы: Docker, Python (FastAPI, и указанные зависимости проекта) - как технологии для разработки и развертывания.<br>
+                        А так же принципы чистого кода, SOLID, паттерны проектирования: абстрактная фабрика, репозиторий, unit of work.<br>
+                        Как хранилища данных: PostgreSQL - для всех данных.
+                    </p>
+                </div>
+                <a href="https://github.com/SagidKamilov/TaskService_Server" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
+            </div>
+
+            <div class="project__general-text">
+                <h3 class="heading__first_project">Октябрь 2023 - наше время</h3>
+                <p class="general-text__first_project">
+                    Разработка backend-сервиса. Бэкенд-сервис для поддержания онлайн деятельности суши ресторана.<br>
+                    Предоставляет доступ к сервисам с данными онлайн-ресторана со своей архитектурой. Сервис так же предоставляет
+                    админ-панель для администраторов для работы с меню.
+                    <br><a href="javascript:void(0)" onclick="showHide('seventh_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <div class="general-text__first_project__div description-project" id="seventh_project">
+                    <p class="general-text__first_project__p">
+                        Функционал сервиса:
+                    </p>
+                    <ul>
+                        <li>
+                            Работа с профилем пользователя;
+                        </li>
+                        <li>
+                            Сохранение историй заказов;
+                        </li>
+                        <li>
+                            Работы с администраторами;
+                        </li>
+                        <li>
+                            Сборка и получение меню;
+                        </li>
+                        <li>
+                            Работа с корзиной;
+                        </li>
+                        <li>
+                            Админ-панель;
+                        </li>
+                    </ul>
+                    <p class="general-text__first_project__p">
+                        В ходе разработки были использованы: Docker, Python (FastAPI, и указанные зависимости проекта) - как технологии для разработки и развертывания.<br>
+                        Для реализации админ-панели использованы:.
+                        А так же принципы чистого кода, SOLID, паттерны проектирования: абстрактная фабрика, репозиторий, unit of work.<br>
+                        Как хранилища данных: PostgreSQL - для всех данных, mongoDB - для корзины.
+                    </p>
+                </div>
+                <a href="https://github.com/SagidKamilov/RestaurantSushi_Server" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
+            </div>
+
+            <div class="project__general-text">
+                <h3 class="heading__first_project">Октябрь 2023 - наше время</h3>
+                <p class="general-text__first_project">
+                    Разработка Telegram-бота. Телеграмм-бот - это один из фронт-энд-сервисов для онлайн деятельности суши ресторана.<br>
+                    Бот интегрируется через API с backend, получая и отправляя данные для предоставления функциональных требований.
+                    Пользователь может сделать, оплатить и отслеживать свой заказ с помощью бота, а также связываться с администраторами.
+                    <br><a href="javascript:void(0)" onclick="showHide('fifth_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <div class="general-text__first_project__div description-project" id="fifth_project">
+                    <p class="general-text__first_project__p">
+                        Функционал бота делится на 2 роли пользователй и 3 уровня программного кода:<br>
+                        Роли пользователей:
+                    </p>
+                    <ul>
+                        <li>Клиент - может зарегистрироваться/авторизоваться, а дальше заказывать, платить, отслеживать заказ.
+                            В случай неисправностей или ошибок, или иных обстоятельств - пользователю предоставляется возможность
+                            связаться с администратором и обсудить проблему;
+                        </li>
+                        <li>
+                            Администратор - модерирует поступаемые заявки от клиентов: принимает или отклоняет. Может обновлять распорядок,
+                            отслеживать пользовательские запросы, пожелания, жалобы;
+                        </li>
+                    </ul>
+                    <p class="general-text__first_project__p">
+                        Программные уровни:
+                    </p>
+                    <ul>
+                        <li>
+                            API - программный интерфейс для взаимодействия с backend сервисом для выполнения операций, запрашиваемых клиентом
+                            на уровне фронт-энда;
+                        </li>
+                        <li>
+                            Service - уровень приложения, который сериализует получаемые и отправляемые данные в вид,
+                            понятный боту и backend соответственно;
+                        </li>
+                        <li>
+                            Bot - уровень приложения, в котором реализована логика взаимодействия с пользователем за счет возможностей,
+                            предоставленных фреймворком Aiogram 3.x;
+                        </li>
+                    </ul>
+                    <p class="general-text__first_project__p">
+                        В ходе разработки были использованы: Docker, Python (Aiogram 3.x, requests...) - как технологии для разработки и развертывания.<br>
+                        А так же принципы чистого кода, SOLID, паттерны проектирования: абстрактная фабрика.
+                    </p>
+                </div>
+                <a href="https://github.com/SagidKamilov/RestaurantSushi_Bot" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
+            </div>
+
+            <div class="project__general-text">
+                <h3 class="heading__first_project">Октябрь 2023 - октябрь 2023</h3>
+                <p class="general-text__first_project">
+                    Разработка и поддержка.
+                    Разработал Telegram-бота, который по входным данных составлял договор-заявку для заказчика и перевозчика.
+                    Проект был реализован для ИП, занимающееся логистикой грузоперевозок.
+                    <br><a href="javascript:void(0)" onclick="showHide('fourth_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <div class="general-text__first_project__div description-project" id="fourth_project">
+                    <p class="general-text__first_project">
+                        В разработке использовал язык программирования Python. Мне необходимо было построить машину состояний,
+                        которая будет запрашивать информацию в виде 30 вопросов. После получения информации,
+                        бот производил заполнение документов по указанным шаблонам Jinja и библиотеки работы с файлами типа .docx.
+                        После чего пользователю высылается 2 заполненных документа-заявки.
+                        <br><br>
+                        Функционал так же предусматривает сохранения заявок на сервере, возможность получения любой созданной заявки,
+                        удаление одной заявки, удаление всех заявок и кнопку "помощь". Операции выполняются в соответствии с названием.
+                    </p>
+                </div>
+                <a href="https://github.com/SagidKamilov/FillDoc_Bot" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
+            </div>
+
+            <div class="project__general-text">
+                <h3 class="heading__first_project">Январь 2023 - октябрь 2023</h3>
+                <p class="general-text__first_project">
+                    Обучался, оттачивал навыки, улучшал познания...
+                    Практиковал верстку сайтов, подобную этому. Создавал маленькие проекты в виде "Заметки" на десктоп,
+                    бот для "Управления логистическими процессами", площадка для работы с грузоперевозками:
+                    выкладывание, сбор и т.п.
+                </p>
+            </div>
+            <div class="project__general-text">
+                <h3 class="heading__first_project">10 декабря 2022 - 12 декабря 2022</h3>
+                <p class="general-text__first_project">
+                    Я попробовал собрать свою команду. И нам выпал кейс разработать приложение, которое на основе метаданных
+                    будет вычислять теоретическую вероятность выгорания сотрудника в процентном соотношении.
+                    <br><a href="javascript:void(0)" onclick="showHide('third_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <div class="general-text__first_project__div description-project" id="third_project">
+                    <p class="general-text__first_project">
+                        Этот хакатон мы не выиграли. Я руководил проектом и получил опыт. Я писал скрипт, который через
+                        расстояние Левенштейна находил близкие по температурным шаблонам фразы в передаваемых данных,
+                        чтобы определить степень загруженности и усталости человека.
+                    </p>
+                </div>
+            </div>
+            <div class="project__general-text">
+                <h3 class="heading__first_project">17 октября 2022 - 22 октября 2022</h3>
+                <p class="general-text__first_project">
+                    Это был мой первый хакатон с командой. Нашей задачей было создать мобильное приложение для управления мероприятиями.
+                    Команда разделилась на backend (Python/Flask) и frontend (android/kotlin).
+                    <br><a href="javascript:void(0)" onclick="showHide('second_project')" class="interesting-text__span_green">Описание</a>
+                </p>
+                <div class="general-text__first_project__div description-project" id="second_project">
+                    <p class="general-text__first_project">
+                        Я разрабатывал функции перехватчики и писал запросы к базе данных. Задача backend была предоставлять по запросам
+                        необходимые данные в виде json после обработки запроса и выполнения операций над БД.
+                    </p>
+                </div>
+            </div>
+            <div class="project__general-text">
+                <h3 class="heading__first_project">Август 2022 - октябрь 2022</h3>
                 <p class="general-text__first_project">
                     У нас был общий сервер, к которому подключались приложения через API. Был ВК-бот и Android-приложение.
                     Но из-за санкций мы не смогли распространить IOS-приложение. Меня попросили сделать ТГ-бота.
-                    <br><a href="javascript:void(0)" onclick="showHide('first_project')" class="interesting-text__span_green">Описание</a>
+                    <br><a href="javascript:void(0)" onclick="showHide('first_project')" class="interesting-text__span_green interesting-text__a">Описание</a>
                 </p>
-                <p class="general-text__first_project description-project" id="first_project">
-                    Телеграм бот работает с backend через API. В его функционал входят следующие возможности:
-                    зарегистрироваться в нашем сервисе отправлять расписание занятий для студентов, для преподавателей,
-                    подписаться на события для группы/групп, получать корректировки по расписанию. Для удобства пользования
-                    были добавлены динамические клавиатуры.
-                </p>
+                <div class="general-text__first_project__div description-project" id="first_project">
+                    <p class="general-text__first_project">
+                        Телеграм бот работает с backend через API. В его функционал входят следующие возможности:
+                        зарегистрироваться в нашем сервисе отправлять расписание занятий для студентов, для преподавателей,
+                        подписаться на события для группы/групп, получать корректировки по расписанию. Для удобства пользования
+                        были добавлены динамические клавиатуры.
+                    </p>
+                </div>
                 <a href="https://github.com/SagidKamilov/TurtleTG_Bot" target="_blank" class="interesting-text__span_green">Посмотреть КОД</a>
             </div>
         </div>
     </div>
-    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
