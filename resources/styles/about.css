@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    height: 230vh;
 }
 
 /* Для нав меню */
@@ -52,7 +53,6 @@ body{
     align-items: flex-start;
     flex-flow: column wrap;
     width: 50vw;
-    height: 100vh;
 }
 
 /* Заголовок общего текста */
@@ -69,6 +69,26 @@ body{
     font-family: "Arial", sans-serif;
     font-weight: lighter;
     font-size: 19px;
-    line-height: 35px;
+    line-height: 30px;
     color: white;
+}
+
+.general-text__p{
+    margin-top: 35px;
+}
+
+.general-skill__div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.general-skill-out__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    border: 3px solid red;
+    border-radius: 50px;
+    background-color: white;
 }
