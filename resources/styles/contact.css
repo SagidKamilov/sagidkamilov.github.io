@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    height: 200vh;
 }
 
 /* Для нав меню */
@@ -52,7 +53,6 @@ body{
     align-items: flex-start;
     flex-flow: column wrap;
     width: 50vw;
-    height: 100vh;
 }
 
 /* Для заголовка в тексте */
@@ -69,12 +69,12 @@ body{
     font-family: "Arial", sans-serif;
     font-weight: lighter;
     font-size: 19px;
-    line-height: 35px;
+    line-height: 30px;
     color: white;
 }
 
 .contact-general__links{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .contact-general__links a{
