@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'Graphik-Semibold';
+  src: url('../fonts/Graphik-Semibold.woff') format('woff');
+}
+
 body{
     background-color: black;
     height: 230vh;
+    font-family: 'Graphik-Semibold', sans-serif;
 }
 
 /* Для нав меню */
@@ -41,7 +47,7 @@ body{
 }
 
 .big__h1{
-    font-family: "Arial", sans-serif;
+    font-family: "Graphik-Semibold", sans-serif;
     font-size: 72px;
     color: white;
 }
@@ -52,13 +58,13 @@ body{
     display: flex;
     align-items: flex-start;
     flex-flow: column wrap;
-    width: 50vw;
+    width: 45vw;
 }
 
 /* Заголовок общего текста */
 
 .about-me__begin-text h3{
-    font-family: "Arial", sans-serif;
+    font-family: "Graphik-Semibold", sans-serif;
     font-size: 40px;
     color: white;
 }
@@ -66,10 +72,10 @@ body{
 /* Тело общего текста */
 
 .about-me__general-text p{
-    font-family: "Arial", sans-serif;
+    font-family: "Regu", sans-serif;
     font-weight: lighter;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 170%;
     color: white;
 }
 
@@ -80,7 +86,7 @@ body{
 .general-skill__div{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .general-skill-out__div{

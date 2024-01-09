@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Graphik-Semibold';
+  src: url('../fonts/Graphik-Semibold.woff') format('woff');
+}
+
 body{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -7,6 +12,7 @@ body{
     right: 0;
     bottom: 0;
     background-color: black;
+    font-family: 'Graphik-Semibold', sans-serif;
 }
 
 #notification {
@@ -55,7 +61,7 @@ body{
 
 .nav-menu > a {
     display: flex;
-    font-family: "Arial", serif;
+    font-family: "Graphik-Semibold", sans-serif;
     font-weight: bold;
     font-size: 85px;
     text-decoration: none;

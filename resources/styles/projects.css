@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Graphik-Semibold';
+  src: url('../fonts/Graphik-Semibold.woff') format('woff');
+}
+
 body{
     background-color: black;
+    font-family: "Graphik-Semibold", sans-serif;
 }
 
 /* Для уведомления */
@@ -66,7 +72,7 @@ body{
 }
 
 .big__h1{
-    font-family: "Arial", sans-serif;
+    font-family: "Graphik-Semibold", sans-serif;
     font-size: 72px;
     color: white;
 }
@@ -78,14 +84,14 @@ body{
     flex-direction: column;
     /*align-items: flex-start;*/
     /*flex-flow: column wrap;*/
-    width: 50vw;
+    width: 45vw;
     height: 100vh;
 }
 
 /* Заголовок общего текста */
 
 .project__begin-text h3{
-    font-family: "Arial", sans-serif;
+    font-family: "Graphik-Semibold", sans-serif;
     font-size: 40px;
     color: white;
 }
@@ -94,7 +100,7 @@ body{
 
 .heading__first_project{
     /*padding-top: 20px;*/
-    font-family: "Arial", sans-serif;
+    font-family: "Graphik-Semibold", sans-serif;
     font-size: 26px;
     color: white;
 }
@@ -102,22 +108,22 @@ body{
 /* Тело общего текста */
 
 .project__general-text p, a {
-    font-family: "Arial", sans-serif;
+    font-family: "Regu", sans-serif;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 170%;
     color: white;
 }
 
-.description-project{
-    display: none;
-}
+/*.description-project{*/
+/*    display: none;*/
+/*}*/
 
 .project__general-text ul{
-    font-family: "Arial", sans-serif;
+    font-family: "Regu", sans-serif;
     font-weight: lighter;
-    /*font-size: 19px;*/
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 170%;
     color: white;
 }
 
