@@ -1,55 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Факты о мире</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/styles/style.css" />
+    <link rel="shortcut icon" href="resources/icons/s.png" />
+    <title>Портфолио Backend Инженера</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Удивительные факты о мире</h1>
-    <ul>
-      <li>Сердце синего кита настолько большое, что человек мог бы проплыть по его артериям.</li>
-      <li>На Венере сутки длиннее года — она вращается вокруг своей оси медленнее, чем вокруг Солнца.</li>
-      <li>Каждый день примерно 8 миллионов молний ударяют по Земле.</li>
-      <li>В Японии есть кафе, где обслуживают роботы, управляемые парализованными людьми из дома.</li>
-      <li>Пустыня Сахара когда-то была зелёной и наполненной озёрами и лесами.</li>
-      <li>И САМЫЙ ГЛАВНЫЙ ФАКТ</li>
-      <li>Рост Шуаны Абакаровой, которая проживает по адресу ЖК Красный Аксай, составляет 189 см, в то время как у ее брата Рамазана всего 172 см с причесоном</li>
-    </ul>
-  </div>
+    <div id="notification" class="notification">
+        <p class="notification__big-text__h1">Текст - это меню. Наведи на него</p>
+        <p class="notification__big-text__h1">Картинка - ссылка на GitHub</p>
+<!--        <p class="notification__small-text__p"># Нажми на меня</p>-->
+    </div>
+
+    <section id="nav-menu" class="nav-menu">
+        <a href="resources/about.html"><span class="down color-red">Привет.</span><span class="up color-red">Обо мне</span></a>
+        <a href="resources/projects.html"><span class="down">Я есть</span><span class="up">Проекты</span></a>
+        <a href="resources/contact.html"><span class="down">Сагид</span><span class="up">Контакты</span></a>
+    </section>
+
+    <section id="profile-photo">
+        <div class="div-profile-photo">
+            <a href="https://github.com/SagidKamilov" target="_blank" ><img class="img-div-profile-photo" src="resources/images/avatar.jpg" width="500" height="500" alt="Аватар создателя сайта"/></a>
+        </div>
+    </section>
+
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
